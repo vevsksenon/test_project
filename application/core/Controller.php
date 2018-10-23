@@ -4,27 +4,15 @@ class Controller{
     protected $data_query = array();
 	
 	private $need_params = array(
-	    'controller_user'              => array(),
+	    'controller_user'              => array('su' => 'int', 'sa' => 'string'),
 		'controller_opengame'          => array('su' => 'int', 'sa' => 'string'),
-        'controller_energylost'        => array(),
-        'controller_energymax'        => array(),
-        'controller_energyspeed'        => array(),
-        'controller_checkexmo'        => array(),
     );
 	
     protected $errors =array(
 		0 => 'unknown_error',
         1 => 'incorrect_params',
         2 => 'invalid_key',
-        3 => 'not_energy',
-        4 => 'not_money_for_up_max_energy',
-        5 => 'err_update_max_energy',
-        6 => 'err_get_user_data',
-        7 => 'err_update_lost_energy',
-        8 => 'err_update_speed_energy',
-        9 => 'not_money_for_up_speed_energy',
-        10 => 'max_lvl_to_speed_energy',
-        11 => 'max_lvl_to_max_energy',
+        3 => 'user_not_exist',
 		24 => 'no_auth',
 		25 => 'error_connect_db',
 		26 => 'method_does_not_exist',

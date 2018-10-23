@@ -71,5 +71,6 @@
         <div class="timer_energy_val"></div>
     </div>
 </div>
+<div id="modal_err"></div>
 </body>
 </html>

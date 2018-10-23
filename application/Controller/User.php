@@ -8,8 +8,8 @@ class Controller_User extends Controller{
     }
 
     public function index(){
-        $user_data = new Model_UserData();
-        //$this->data_response = $user_data->GetUserData();
+        $user = new Model_User();
+        $this->data_response = $user->getUser();
         $this->answer();
         exit;
     }

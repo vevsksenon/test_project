@@ -9,7 +9,7 @@ class Controller_OpenGame extends Controller{
 
     public function index(){
         $user = new Model_User();
-        $this->data_response = $user->OpenGame();
+        $this->data_response = $user->getUser();
         $this->answer();
         exit;
     }
