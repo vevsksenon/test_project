@@ -91,15 +91,21 @@ body{
     display: none;
 }
 
-#modal_err:before{
-    content: "+";
+#modal_err .close_modal{
+    width: 40px;
+    height: 40px;
+    text-align: center;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 0;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    color: burlywood;
 }
 
 #modal_alert{

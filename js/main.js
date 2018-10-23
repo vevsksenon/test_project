@@ -19,10 +19,13 @@ function post_q(url,data,callback) {
 }
 
 function setAlert(data,fatal) {
-    var modal = "<div id='modal_alert'><p class='text'>"+data+"</p></div>";
+    var modal = "<div id='modal_alert'><div class='close_modal'>+</div><p class='text'>"+data+"</p></div>";
     if(fatal){
         $('body').html(modal);
     }else{
-        $("#modal_err").html(modal);
+        $("#modal_err").html(modal).show();
+        $("#modal_err .close_modal").click(function () {
+            $("#modal_err").hide().empty();
+        })
     }
 }
