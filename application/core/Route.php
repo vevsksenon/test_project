@@ -25,7 +25,7 @@ class Route{
 				exit;
 			}
 		}
-		Common::answer(array('status' => 'error', 'error_code' => 26));
+		Common::answer(array('status' => 'error', 'error_code' => 26, 'fatal' => true));
 	}
 }
 ?>

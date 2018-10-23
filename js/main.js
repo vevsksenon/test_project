@@ -12,7 +12,7 @@ function post_q(url,data,callback) {
             if(answ.status == 'success'){
                 callback(answ);
             }else {
-                setAlert("Ошибка с кодом - "+answ.error_code,false);
+                setAlert("Ошибка с кодом - "+answ.error_code,answ.fatal);
             }
         }
     });
