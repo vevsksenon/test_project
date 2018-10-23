@@ -81,6 +81,27 @@ body{
     background-image: url("/images/load_image.jpg");
 }
 
+#modal_err{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(216, 40, 40, 0.34);
+    border-radius: 20px;
+    display: none;
+}
+
+#modal_err:before{
+    content: "+";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 #modal_alert{
     position: absolute;
     height: 100%;
