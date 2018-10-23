@@ -80,3 +80,16 @@ body{
     height: 100%;
     background-image: url("/images/load_image.jpg");
 }
+
+#modal_alert{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#modal_alert .text{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}

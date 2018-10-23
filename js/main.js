@@ -19,7 +19,7 @@ function post_q(url,data,callback) {
 }
 
 function setAlert(data,fatal) {
-    var modal = "<div id='modal_alert'><div class='text'>"+data+"</div></div>";
+    var modal = "<div id='modal_alert'><p class='text'>"+data+"</p></div>";
     if(fatal){
         $('body').html(modal);
     }else{
