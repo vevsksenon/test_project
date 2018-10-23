@@ -9,7 +9,7 @@ class Controller_User extends Controller{
 
     public function index(){
         $user_data = new Model_UserData();
-        $this->data_response = $user_data->GetUserData();
+        //$this->data_response = $user_data->GetUserData();
         $this->answer();
         exit;
     }
