@@ -6,19 +6,23 @@ function post_q(url,data,callback) {
             try{
                 answ = JSON.parse(answ);
             }catch (e){
-                setAlert("Ошибка связи с сервером - пожалуйста обновите страницу");
+                setAlert("Ошибка связи с сервером - пожалуйста обновите страницу",true);
                 return;
             }
             if(answ.status == 'success'){
                 callback(answ);
             }else {
-                setAlert("Ошибка с кодом - "+answ.error_code);
+                setAlert("Ошибка с кодом - "+answ.error_code,false);
             }
         }
     });
 }
 
-function setAlert(data) {
+function setAlert(data,fatal) {
     var modal = "<div id='modal_alert'><div class='text'>"+data+"</div></div>";
-    $("#modal_err").html(modal);
+    if(fatal){
+        $('body').html(modal);
+    }else{
+        $("#modal_err").html(modal);
+    }
 }
