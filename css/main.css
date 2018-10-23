@@ -1,0 +1,82 @@
+body{
+    background-color: #4677d0;
+    margin: 0;
+    width: 1000px;
+    height: 600px;
+}
+
+.user_data,
+.energy_lost,
+.update_energy_max,
+.update_energy_speed{
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+.energy_lost{
+    background-color: orange;
+}
+.user_data{
+    background-color: #c9d0de;
+}
+.update_energy_max{
+    background-color: yellow;
+}
+.update_energy_speed{
+    background-color: greenyellow;
+}
+#main_container{
+    display: inline-block;
+}
+.panel_container{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #755b5b;
+}
+.panel_container>div{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    padding-top: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #8791a5;
+}
+
+#load_fon{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+    z-index: 1;
+}
+
+#center_fon_block{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    margin-top: 150px;
+}
+
+#load_overflow{
+    position: relative;
+    width: 0%;
+    height: 100px;
+    top: calc(50% - 50px);
+    overflow: hidden;
+}
+
+#loading_bar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/load_image.jpg");
+}
